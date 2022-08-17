@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headtag}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <form action="/login" method="post">
+        <input type="text" name="id" placeholder="ID">
+        <br>
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
