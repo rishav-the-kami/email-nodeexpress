@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>headtag}}
+    <title>Received Emails</title>
+</head>
+<body>
+    {{#each emails as |value key|}}
+        <div>
+            <h1>S no : {{key}}</h1>
+            <p>Sent by: {{value.sender}}</p>
+            <p>Receiver: {{value.receiver}}</p>
+            <p>Content: {{value.content}}</p>
+        </div>
+    {{/each}}
+
+    <h1>{{noEmailMsg}}</h1>
+</body>
+</html>
